@@ -15,10 +15,10 @@ steps:
   inputs:
     channel: 'stable'
     version: 'latest'
-- task: FlutterCommand@0
+- task: CmdLine@2
   inputs:
-    arguments: 'upgrade'
-    projectDirectory: '.'
+    script: 'flutter upgrade'
+    workingDirectory: '.'
 - task: FlutterBuild@0
   inputs:
     target: 'ios'
