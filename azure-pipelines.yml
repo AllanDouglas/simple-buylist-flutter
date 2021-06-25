@@ -23,3 +23,6 @@ steps:
   inputs:
     target: 'ios'
     projectDirectory: '.'
+    debugMode: true
+    iosCodesign: false
+
